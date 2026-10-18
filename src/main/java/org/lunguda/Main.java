@@ -3,6 +3,7 @@ package org.lunguda;
 import org.lunguda.arrays.ArrayS;
 import org.lunguda.arrays._2DArrays;
 import org.lunguda.lists.Lists;
+import org.lunguda.stacks.Stacks;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -29,5 +30,9 @@ public class Main {
         // working with lists
         Lists list = new Lists();
         list.workWLists();
+
+
+        Stacks stack = new Stacks();
+        stack.workingWStacks();
     }
 }
