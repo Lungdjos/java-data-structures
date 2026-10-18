@@ -3,6 +3,7 @@ package org.lunguda;
 import org.lunguda.arrays.ArrayS;
 import org.lunguda.arrays._2DArrays;
 import org.lunguda.lists.Lists;
+import org.lunguda.queues.Queues;
 import org.lunguda.stacks.Stacks;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -34,5 +35,8 @@ public class Main {
 
         Stacks stack = new Stacks();
         stack.workingWStacks();
+
+        Queues queues = new Queues();
+        queues.workingWQueues();
     }
 }
