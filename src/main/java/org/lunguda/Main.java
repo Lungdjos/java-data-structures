@@ -2,6 +2,7 @@ package org.lunguda;
 
 import org.lunguda.arrays.ArrayS;
 import org.lunguda.arrays._2DArrays;
+import org.lunguda.lists.Lists;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -17,11 +18,16 @@ public class Main {
             IO.println("i = " + i);
         }
 
+        // working with arrays
         ArrayS a = new ArrayS();
         a.workingStrings();
         a.workingNumbers();
 
         _2DArrays b = new _2DArrays();
         b.ticTacToe();
+
+        // working with lists
+        Lists list = new Lists();
+        list.workWLists();
     }
 }
