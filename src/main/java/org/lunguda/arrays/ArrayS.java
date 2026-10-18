@@ -17,9 +17,7 @@ public class ArrayS {
 
         // to see the array
         System.out.println("This is a toString array presentation: ");
-        System.out.println(Arrays.toString(colors));
         System.out.println("This is a deep toString array presentation: ");
-        System.out.println(Arrays.deepToString(colors));
 
         // accessing elements in an array
         System.out.println("\nForward accessing of element in an array: ");
@@ -36,7 +34,7 @@ public class ArrayS {
 
         // using enhance for-loop
         System.out.println("\nAccessing of element in an array using enhanced for: ");
-        for (String  color : colors) {
+        for (String color : colors) {
             System.out.println(color);
         }
 
