@@ -1,6 +1,7 @@
 package org.lunguda;
 
 import org.lunguda.arrays.ArrayS;
+import org.lunguda.arrays._2DArrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -19,5 +20,8 @@ public class Main {
         ArrayS a = new ArrayS();
         a.workingStrings();
         a.workingNumbers();
+
+        _2DArrays b = new _2DArrays();
+        b.ticTacToe();
     }
 }
