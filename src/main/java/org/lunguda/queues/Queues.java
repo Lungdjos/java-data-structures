@@ -27,5 +27,21 @@ public class Queues {
         System.out.println(supermarket.peek());
     }
 
+    public void workingWLinkedLists(){
+        LinkedList<Person> linkedList = new LinkedList<>();
+        linkedList.add(new Person("Doe", 23));
+        linkedList.add(new Person("Mark", 29));
+        linkedList.add(0, new Person("Mary", 41));
+
+        var personListIter = linkedList.listIterator();
+        while (personListIter.hasNext()){
+            System.out.println(personListIter.next());
+        }
+
+        while (personListIter.hasPrevious()){
+            System.out.println(personListIter.previous());
+        }
+    }
+
     record Person(String name, int age){}
 }

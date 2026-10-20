@@ -38,5 +38,7 @@ public class Main {
 
         Queues queues = new Queues();
         queues.workingWQueues();
+
+        queues.workingWLinkedLists();
     }
 }
