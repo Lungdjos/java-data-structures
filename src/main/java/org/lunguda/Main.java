@@ -4,6 +4,7 @@ import org.lunguda.arrays.ArrayS;
 import org.lunguda.arrays._2DArrays;
 import org.lunguda.lists.Lists;
 import org.lunguda.queues.Queues;
+import org.lunguda.sets.Sets;
 import org.lunguda.stacks.Stacks;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -32,7 +33,6 @@ public class Main {
         Lists list = new Lists();
         list.workWLists();
 
-
         Stacks stack = new Stacks();
         stack.workingWStacks();
 
@@ -40,5 +40,9 @@ public class Main {
         queues.workingWQueues();
 
         queues.workingWLinkedLists();
+
+        // working with sets
+        Sets obj =  new Sets();
+        obj.workingWSet();
     }
 }
