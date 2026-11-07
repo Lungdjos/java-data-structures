@@ -41,6 +41,7 @@ public class Main {
 
         queues.workingWLinkedLists();
 
+        System.out.println("\n\n################## SETS ##################");
         // working with sets
         Sets obj =  new Sets();
         obj.workingWSet();
