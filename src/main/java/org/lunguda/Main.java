@@ -3,6 +3,7 @@ package org.lunguda;
 import org.lunguda.arrays.ArrayS;
 import org.lunguda.arrays._2DArrays;
 import org.lunguda.lists.Lists;
+import org.lunguda.maps.Maps;
 import org.lunguda.queues.Queues;
 import org.lunguda.sets.Sets;
 import org.lunguda.stacks.Stacks;
@@ -36,14 +37,20 @@ public class Main {
         Stacks stack = new Stacks();
         stack.workingWStacks();
 
+        // working with stacks
         Queues queues = new Queues();
         queues.workingWQueues();
 
+        // working with linked-lists
         queues.workingWLinkedLists();
 
-        System.out.println("\n\n################## SETS ##################");
         // working with sets
-        Sets obj =  new Sets();
+        Sets obj = new Sets();
         obj.workingWSet();
+
+        // working with maps
+        System.out.println("\n\n################## MAPS ##################");
+        Maps maps = new Maps();
+        maps.workingWMaps();
     }
 }
