@@ -52,5 +52,6 @@ public class Main {
         System.out.println("\n\n################## MAPS ##################");
         Maps maps = new Maps();
         maps.workingWMaps();
+        maps.workingWHMaps();
     }
 }

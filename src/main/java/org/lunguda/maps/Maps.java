@@ -2,6 +2,7 @@ package org.lunguda.maps;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Maps {
     public Maps() {
@@ -38,5 +39,60 @@ public class Maps {
 
     }
 
-    record Person(String  name, int age) {}
+    public void workingWHMaps(){
+        Map<Object, Object > map = new HashMap<>();
+        map.put(new Person("Doe", 22), new Diamond("African Diamond"));
+
+        // accessing an element
+        System.out.println(map.get(new  Person("Doe", 22)).hashCode());
+        System.out.println(map.get(new  Person("Doe", 22)));
+    }
+
+    class Person{
+        private String name;
+        private int age;
+
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (o == null || getClass() != o.getClass()) return false;
+            Person person = (Person) o;
+            return getAge() == person.getAge() && Objects.equals(getName(), person.getName());
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(getName(), getAge());
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "name='" + name +'\'' +
+                    "age'" + age +'\'' +
+            '}';
+        }
+    }
+
+    record Diamond(String name){}
 }
